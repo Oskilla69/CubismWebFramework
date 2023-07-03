@@ -123,15 +123,15 @@ export class CubismModel {
   /**
    * パラメータを保存する
    */
-  public saveParameters(): void {
+  public saveParameters(callback: CubismDefaultExpressionCallback): void {
     const parameterCount: number = this._model.parameters.count;
     const savedParameterCount: number = this._savedParameters.getSize();
 
     for (let i = 0; i < parameterCount; ++i) {
       if (i < savedParameterCount) {
-        this._savedParameters.set(i, this._parameterValues[i]);
+        this._savedParameters.set(i, callback(this._model.parameters.ids.at(i), this._parameterValues[i]));
       } else {
-        this._savedParameters.pushBack(this._parameterValues[i]);
+        this._savedParameters.pushBack(callback(this._model.parameters.ids.at(i), this._parameterValues[i]));
       }
     }
   }
@@ -1575,6 +1575,7 @@ export class CubismModel {
 
 // Namespace definition for compatibility.
 import * as $ from './cubismmodel';
+import { CubismDefaultExpressionCallback } from './cubismtypes';
 // eslint-disable-next-line @typescript-eslint/no-namespace
 export namespace Live2DCubismFramework {
   export const CubismModel = $.CubismModel;

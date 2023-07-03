@@ -1,0 +1,1 @@
+export type CubismDefaultExpressionCallback = (paramId: string, paramValue: number) => number;
