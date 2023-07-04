@@ -24,7 +24,7 @@ import { CubismLogError, CubismLogInfo } from '../utils/cubismdebug';
 import { CubismMoc } from './cubismmoc';
 import { CubismModel } from './cubismmodel';
 import { CubismModelUserData } from './cubismmodeluserdata';
-import { CubismDefaultExpressionCallback } from './cubismtypes';
+import { CubismDefaultExpressionCallback, CubismExpressions } from './cubismtypes';
 
 /**
  * ユーザーが実際に使用するモデル
@@ -424,7 +424,8 @@ export class CubismUserModel {
   protected _dragManager: CubismTargetPoint; // マウスドラッグ
   protected _physics: CubismPhysics; // 物理演算
   protected _modelUserData: CubismModelUserData; // ユーザーデータ
-  protected _modelExecutables: any;
+  protected _modelExecutables: any; // Model callbacks
+  protected _modelExpressions: CubismExpressions; // Model expressions
 
   protected _initialized: boolean; // 初期化されたかどうか
   protected _updating: boolean; // 更新されたかどうか
