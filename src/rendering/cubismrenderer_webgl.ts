@@ -1087,7 +1087,7 @@ export class CubismRendererProfile_WebGL {
     this._lastArrayBufferBinding = this.gl.getParameter(
       this.gl.ARRAY_BUFFER_BINDING
     );
-    this._lastArrayBufferBinding = this.gl.getParameter(
+    this._lastElementArrayBufferBinding = this.gl.getParameter(
       this.gl.ELEMENT_ARRAY_BUFFER_BINDING
     );
     this._lastProgram = this.gl.getParameter(this.gl.CURRENT_PROGRAM);
