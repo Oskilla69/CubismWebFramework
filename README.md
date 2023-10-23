@@ -4,7 +4,7 @@
 
 # Cubism Web Framework
 
-This is a framework for using models output by Live2D Cubism 4 Editor in applications.
+This is a framework for using models output by Live2D Cubism Editor in applications.
 
 It provides various functions for displaying and manipulating the model.
 It is used in conjunction with the Live2D Cubism Core library to load the model.
@@ -17,17 +17,25 @@ You can use it as a JavaScript library that can be used in the browser by buildi
 Please check the [license](LICENSE.md) before using this SDK.
 
 
+## Compatibility with Cubism 5 new features and previous Cubism SDK versions
+
+This SDK is compatible with Cubism 5.
+
+For SDK compatibility with new features in Cubism 5 Editor, please refer to [here](https://docs.live2d.com/en/cubism-sdk-manual/cubism-5-new-functions/).
+
+For compatibility with previous versions of Cubism SDK, please refer to [here](https://docs.live2d.com/en/cubism-sdk-manual/compatibility-with-cubism-5/).
+
+
 ## Development environment
 
 ### Node.js
 
-* 20.1.0
-* 18.16.0
-* 16.20.0
+* 20.7.0
+* 18.18.0
 
 ### TypeScript
 
-5.0.4
+5.2.2
 
 
 ## Development environment construction
@@ -155,9 +163,9 @@ We are regularly checking issue-reports and feature requests at Live2D Community
 We're also interested in your feedback for the future of the SDK. You can submit a suggestion or feature request at Live2D Community. To make this process more effective, we're asking that you include more information to help define them more clearly.
 
 
-## Community
+## Forum
 
-If you want to suggest or ask questions about how to use the Cubism SDK between users, please use the community.
+If you want to suggest or ask questions about how to use the Cubism SDK between users, please use the forum.
 
-- [Live2D community](https://community.live2d.com/)
-- [Live2D 公式コミュニティ (Japanese)](https://creatorsforum.live2d.com/)
+- [Live2D Creator's Forum](https://community.live2d.com/)
+- [Live2D 公式クリエイターズフォーラム (Japanese)](https://creatorsforum.live2d.com/)
